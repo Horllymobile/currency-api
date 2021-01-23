@@ -1,6 +1,5 @@
 const express = require('express');
 const axios = require('axios');
-const { response } = require('express');
 
 const app = express();
 
@@ -75,4 +74,4 @@ app.get('/api/rates', async(req, res) => {
 
 const port = process.env.PORT || 3000
 
-app.listen(3000, console.log('Server running on Port http://localhost:3000'));
+app.listen(port, console.log('Server running on Port http://localhost:3000'));
